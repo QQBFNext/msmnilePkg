@@ -1,12 +1,12 @@
-INF MdeModulePkg/Core/Dxe/DxeMain.inf
+#INF MdeModulePkg/Core/Dxe/DxeMain.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ParserDxe/ParserDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SerialPortDxe/SerialPortDxe.inf
-INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
-INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
-INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
-INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
-INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+#INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
+#INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
+#INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
+#INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+#INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
 FILE DRIVER = FD975FB5-92C3-40B3-B05C-9C434326AB64 {
     SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/VerifiedBootDxe/VerifiedBootDxe.efi
     SECTION UI = "VerifiedBootDxe"
@@ -24,18 +24,18 @@ FILE DRIVER = CF6DFC66-14AB-4E13-84DB-9C02912D1404 {
     SECTION UI = "TzDxeLA"
 }
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/PsStateDxe/PsStateDxe.inf
-INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
-INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
+#INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
+#INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/VariableDxe/VariableDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ResetRuntimeDxe/ResetRuntimeDxe.inf
-INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
-INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
-INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
+#INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
+#INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+#INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/FontDxe/FontDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.inf
-INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
-INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
+#INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
+#INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ChipInfoDxe/ChipInfoDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/IPCCDxe/IPCCDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/GLinkDxe/GLinkDxe.inf
@@ -46,7 +46,7 @@ INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/HWIODxe/HWI
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/I2CDxe/I2CDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/TLMMDxe/TLMMDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
-INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+#INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
 FILE DRIVER = 6B38F7B4-AD98-40E9-9093-ACA2B5A253C4 {
     SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.efi
     SECTION UI = "DiskIoDxe"
@@ -55,9 +55,9 @@ FILE DRIVER = 1FA1F39E-FEFF-4AAE-BD7B-38A070A3B609 {
     SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.efi
     SECTION UI = "PartitionDxe"
 }
-INF FatPkg/EnhancedFatDxe/Fat.inf
-INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
-INF MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
+#INF FatPkg/EnhancedFatDxe/Fat.inf
+#INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+#INF MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
@@ -69,7 +69,7 @@ INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ClockDxe/Cl
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SPMIDxe/SPMIDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ICBDxe/ICBDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/SmemDxe/SmemDxe.inf
-INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+#INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/RscDxe/RscDxe.inf
 FILE DRIVER = 3AEC2036-C55A-569F-9BD6-B144A55DF39F {
     SECTION PE32 = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/OGaugeAuthDxe/OGaugeAuth.efi
